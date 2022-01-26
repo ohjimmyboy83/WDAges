@@ -1,0 +1,254 @@
+J/ApJS/253/58  Ages of field stars from white dwarf comp. in Gaia  (Qiu+, 2021)
+================================================================================
+Precise ages of field stars from white dwarf companions in Gaia DR2.
+    Qiu D., Tian H.-J., Wang X.-D., Nie J.-L., von Hippel T., Liu G.-C.,
+    Fouesneau M., Rix H.-W.
+   <Astrophys. J. Suppl. Ser., 253, 58 (2021)>
+   =2021ApJS..253...58Q
+================================================================================
+ADC_Keywords: Stars, white dwarf; Stars, double and multiple; Proper motions;
+              Parallaxes, trigonometric; Photometry, ugriz; Stars, ages;
+              Stars, masses; Abundances, [Fe/H]
+Keywords: Stellar ages ; Wide binary stars ; Field stars ;
+          Markov chain Monte Carlo ; Bayesian statistics ; Main sequence stars ;
+          White dwarf stars ; Zero-age main sequence stars ;
+          Stellar evolutionary tracks ; Initial mass function ; Photometry
+
+Abstract:
+    We analyze 4050 wide binary star systems involving a white dwarf (WD)
+    and usually a main-sequence (MS) star, drawn from the large sample
+    assembled by Tian+ (2020, J/ApJS/246/4). Using the modeling code
+    BASE-9, we determine the system's ages, the WD progenitors' zero-age
+    MS masses, the extinction values (AV), and the distance moduli.
+    Discarding the cases with poor age convergences, we obtain ages for
+    3551 WDs, with a median age precision of {sigma}{tau}/{tau}=20%, and
+    system ages typically in the range of 1-6Gyr. We validated these ages
+    against the very few known clusters and through cross validation of
+    236 WD-WD binaries. Under the assumption that the components are
+    coeval in a binary system, this provides precise age constraints on
+    the usually low-mass MS companions, mostly inaccessible by any other
+    means.
+
+Description:
+    In this work, we select 9589 MS-WD and 307 WD-WD candidate binaries
+    from the catalog released by Tian+ (2020, J/ApJS/246/4), which is a
+    catalog of 807611 binaries, by searching from Gaia DR2 in a range of
+    distance <4.0kpc and the projected separation s<1.0pc.
+    According to the contamination rates, we selected 4050 MS-WD binaries
+    with contamination rates <20%. See Section 2.
+
+    We use an open-source software suite, BASE-9
+    (von Hippel+ 2014arXiv1411.3786V), to constrain the ages, ZAMS mass,
+    A_V_, and distance modulus for the 4050 MS-WD candidate binaries.
+    See Section 3.
+
+    We build a catalog that includes the ages and other parameters (see
+    Table 2) of the 3551 field MS components. We also provide a catalog
+    that includes the ages and other parameters of the 3551 MS-WD and 236
+    WD-WD binaries (see Table 4).
+
+File Summary:
+--------------------------------------------------------------------------------
+ FileName    Lrecl  Records   Explanations
+--------------------------------------------------------------------------------
+ReadMe          80        .   This file
+table2.dat     251     3551   Catalog of field MS components from the
+                               primary dataset
+table4.dat     604     3787   Total catalog
+--------------------------------------------------------------------------------
+
+See also:
+ I/343          : Gaia-PS1-SDSS (GPS1) proper motion catalog (Tian+, 2017)
+ I/345          : Gaia DR2 (Gaia Collaboration, 2018)
+ II/358         : SkyMapper Southern Sky Survey. DR1.1 (Wolf+, 2018)
+ I/351          : The extended Gaia-PS1-SDSS (GPS1+) PM catalog (Tian+, 2020)
+ J/A+AS/141/371 : Low-mass stars evolutionary tracks (Girardi+, 2000)
+ J/A+A/501/687  : Evolutionnary models for solar twins (do Nascimento+, 2009)
+ J/ApJS/210/1   : Asteroseismic study of solar-type stars (Chaplin+, 2014)
+ J/A+A/561/A142 : Galactic extinction from SDSS BHB stars (Tian+, 2014)
+ J/MNRAS/456/3655 : Masses and ages of red giants (Martig+, 2016)
+ J/A+A/616/A10  : 46 open clusters GaiaDR2 HR diag. (Gaia Collaboration, 2018)
+ J/ApJ/870/9    : Ages & masses for GPS1 WD-MS binary systems (Fouesneau+, 2019)
+ J/MNRAS/482/4570 : Gaia DR2 white dwarf candidates (Gentile Fusillo+, 2019)
+ J/AJ/159/105   : Two new stellar assoc. in vicinity of the Sun (Liu+, 2020)
+ J/ApJS/246/4   : Catalog of ultrawide binary stars from Gaia DR2 (Tian+, 2020)
+
+Byte-by-byte Description of file: table2.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units    Label    Explanations
+--------------------------------------------------------------------------------
+  1-  19 I19    ---      Gaia2    Gaia DR2 source catalog identifier
+ 21-  30 F10.6  deg      RAdeg    Barycentric right ascension (ICRS) at
+                                   Ep=2015.5
+ 32-  41 F10.6  deg      DEdeg    Barycentric declination (ICRS) at Ep=2015.5
+ 43-  49 F7.5   deg      PDis     [0.00057/0.14] Pair distance
+ 51-  57 F7.3   mas      plx      [1/181] Gaia DR2 parallax
+ 59-  66 F8.3   mas    e_plx      [8/2024] Uncertainty in plx
+ 68-  73 F6.3   mag      Gmag     [4.8/19.7] Mean Gaia DR2 G band magnitude
+ 75-  80 F6.4   mag    e_Gmag     [0.0001/0.02] Uncertainty in Gmag
+ 82-  87 F6.3   mag      Bpmag    [4.9/21.2] Gaia DR2 Blue passband magnitude
+ 89-  93 F5.3   mag    e_Bpmag    [0/0.2] Uncertainty in Bpmag
+ 95- 100 F6.3   mag      Rpmag    [4.6/18.5] Gaia DR2 Red passband magnitude
+102- 106 F5.3   mag    e_Rpmag    [0/0.04] Uncertainty in Rpmag
+108- 117 F10.4  AU       Sep      [56/20635] Projected physical separation
+119- 127 F9.3   mas/yr   pmRA     [-1870/1304] Gaia DR2 proper motion along RA
+                                   (pmRA*cos(DE))
+129- 133 F5.3   mas/yr e_pmRA     [0.017/2.1] Uncertainty in pmRA
+135- 143 F9.3   mas/yr   pmDE     [-2044/1182] Gaia DR2 proper motion along DE
+145- 149 F5.3   mas/yr e_pmDE     [0.013/1.3] Uncertainty in pmDE
+151- 158 F8.3   km/s     RVel     [-325/130]? Spectroscopic barycentric radial
+                                   velocity
+160- 165 F6.3   km/s   e_RVel     [0.1/19.9]? Uncertainty in RVel
+167- 172 F6.3   Gyr      Age      [0.08/12.7] Posterior median WD age
+174- 179 F6.3   Gyr      PreAge   [0.039/12.6] Posterior median WD precursor age
+181- 186 F6.3   Gyr      CoolAge  [0.002/10.4]? Posterior median WD cooling age
+188- 193 F6.3   [Sun]    [Fe/H]   [-1.6/0.08] Posterior median metallicity
+195- 200 F6.3   mag      DM       [-1.3/9.3] Posterior median distance modulus
+202- 206 F5.3   mag      Av       [0/1.9] Posterior median WD V band
+                                   extinction
+208- 212 F5.3   Gyr    e_Age      [0.013/3.5] Posterior standard deviation in
+                                   Age
+214- 218 F5.3   Gyr    e_PreAge   [0.002/3.5] Posterior standard deviation in
+                                   PreAge
+220- 225 F6.3   Gyr    e_CoolAge  [0.002/1.2]? Posterior standard deviation in
+                                   CoolAge
+227- 231 F5.3   [Sun]  e_[Fe/H]   [0.047/0.7] Posterior standard deviation in
+                                   [Fe/H]
+233- 237 F5.3   mag    e_DM       [0.001/0.2] Posterior standard deviation in DM
+239- 243 F5.3   mag    e_Av       [0/0.4] Posterior standard deviation in AV
+     245 I1     ---      Nb       [3/7] Number of photometry bands used in
+                                   BASE-9 fitting
+247- 251 F5.3   ---      PCont    [0/0.2] Contamination probability by random
+                                   alignments
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: table4.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units     Label     Explanations
+--------------------------------------------------------------------------------
+  1-  19 I19    ---       ID1       Star 1 Gaia DR2 source catalog identifier
+ 21-  39 I19    ---       ID2       Star 2 Gaia DR2 source catalog identifier
+ 41-  50 F10.6  deg       RA1deg    Star 1 Barycentric right ascension (ICRS)
+                                     at Ep=2015.5
+ 52-  61 F10.6  deg       RA2deg    Star 2 Barycentric right ascension (ICRS)
+                                     at Ep=2015.5
+ 63-  72 F10.6  deg       DE1deg    Star 1 Barycentric declination (ICRS) at
+                                     Ep=2015.5
+ 74-  83 F10.6  deg       DE2deg    Star 2 Barycentric declination (ICRS) at
+                                     Ep=2015.5
+ 85-  91 F7.3   mas       plx1      [1/182] Star 1 Gaia DR2 parallax
+ 93-  99 F7.3   mas       plx2      [1/181] Star 2 Gaia DR2 parallax
+101- 108 F8.3   mas     e_plx1      [20/4028] Uncertainty in plx1
+110- 117 F8.3   mas     e_plx2      [2/3676] Uncertainty in plx2
+119- 124 F6.3   mag       Gmag1     [4.8/20.1] Star 1 mean Gaia DR2 G band
+                                     magnitude
+126- 131 F6.3   mag       Gmag2     [5.4/20.7] Star 2 mean Gaia DR2 G band
+                                     magnitude
+133- 138 F6.4   mag     e_Gmag1     [0.0001/0.02] Uncertainty in Gmag1
+140- 145 F6.4   mag     e_Gmag2     [0.0001/0.02] Uncertainty in Gmag2
+147- 152 F6.3   mag       Bpmag1    [4.9/20.5] Star 1 Gaia DR2 Blue passband
+                                     magnitude
+154- 159 F6.3   mag       Bpmag2    [5.8/21.2] Star 2 Gaia DR2 Blue passband
+                                     magnitude
+161- 165 F5.3   mag     e_Bpmag1    [0/0.06] Uncertainty in Bpmag1
+167- 171 F5.3   mag     e_Bpmag2    [0/0.2] Uncertainty in Bpmag2
+173- 178 F6.3   mag       Rpmag1    [4.6/19.3] Star 1 Gaia DR2 Red passband
+                                     magnitude
+180- 185 F6.3   mag       Rpmag2    [4.7/20.6] Star 2 Gaia DR2 Red passband
+                                     magnitude
+187- 191 F5.3   mag     e_Rpmag1    [0/0.06] Uncertainty in Rpmag1
+193- 197 F5.3   mag     e_Rpmag2    [0/0.2] Uncertainty in Rpmag2
+199- 207 F9.3   mas/yr    pmRA1     [-1868/1336] Star 1 Gaia DR2 proper motion
+                                     along RA (pmRA*cos(DE))
+209- 217 F9.3   mas/yr    pmRA2     [-1870/1304] Star 2 Gaia DR2 proper motion
+                                     along RA (pmRA*cos(DE))
+219- 223 F5.3   mas/yr  e_pmRA1     [0.017/1.1] Uncertainty in pmRA1
+225- 229 F5.3   mas/yr  e_pmRA2     [0.019/2.1] Uncertainty in pmRA2
+231- 239 F9.3   mas/yr    pmDE1     [-1948/1200] Star 1 Gaia DR2 proper motion
+                                     along DE
+241- 249 F9.3   mas/yr    pmDE2     [-2044/1182] Star 2 Gaia DR2 proper motion
+                                     along DE
+251- 255 F5.3   mas/yr  e_pmDE1     [0.013/1] Uncertainty in pmDE1
+257- 261 F5.3   mas/yr  e_pmDE2     [0.019/3] Uncertainty in pmDE2
+263- 269 F7.3   km/s      RVel1     [-86/130]? Star 1 spectroscopic
+                                     barycentric radial velocity
+271- 278 F8.3   km/s      RVel2     [-325/91]? Star 2 spectroscopic
+                                     barycentric radial velocity
+280- 285 F6.3   km/s    e_RVel1     [0.1/19]? Uncertainty in RVel1
+287- 292 F6.3   km/s    e_RVel2     [0.1/20]? Uncertainty in RVel2
+294- 299 F6.3   mag       gmag1     [12.97/21.11]? Star 1 g band magnitude
+301- 306 F6.3   mag       gmag2     [13.14/21.1]? Star 2 g band magnitude
+308- 313 F6.3   mag       rmag1     [13.24/19.74]? Star 1 r band magnitude
+315- 320 F6.3   mag       rmag2     [14/20.93]? Star 2 r band magnitude
+322- 327 F6.3   mag       imag1     [13.21/19.55]? Star 1 i band magnitude
+329- 334 F6.3   mag       imag2     [14.16/21]? Star 2 i band magnitude
+336- 341 F6.3   mag       zmag1     [13.79/19.61]? Star 1 z band magnitude
+343- 348 F6.3   mag       zmag2     [14.22/21.25]? Star 2 z band magnitude
+350- 354 F5.3   mag     e_gmag1     [0.001/0.3]? Uncertainty in gmag1
+356- 360 F5.3   mag     e_gmag2     [0/0.26]? Uncertainty in gmag2
+362- 366 F5.3   mag     e_rmag1     [0/0.22]? Uncertainty in rmag1
+368- 372 F5.3   mag     e_rmag2     [0/0.23]? Uncertainty in rmag2
+374- 378 F5.3   mag     e_imag1     [0/0.25]? Uncertainty in imag1
+380- 384 F5.3   mag     e_imag2     [0/0.2]? Uncertainty in imag2
+386- 390 F5.3   mag     e_zmag1     [0/0.23]? Uncertainty in zmag1
+392- 396 F5.3   mag     e_zmag2     [0/0.3]? Uncertainty in zmag2
+398- 403 F6.3   Gyr       Age1      [0.17/12.53]? Star 1 posterior median WD age
+405- 410 F6.3   Gyr       Age2      [0.08/12.7]? Star 2 posterior median WD age
+412- 416 F5.3   Msun      ZMass1    [0.8/7.8]? Star 1 ZAMS mass
+418- 422 F5.3   Msun      ZMass2    [0.8/8]? Star 2 ZAMS mass
+424- 429 F6.3   Gyr       PreAge1   [0.04/12.3]? Star 1 posterior median WD
+                                     precursor age
+431- 436 F6.3   Gyr       PreAge2   [0.03/12.6]? Star 2 posterior median WD
+                                     precursor age
+438- 442 F5.3   Gyr       CoolAge1  [0/8.9]? Star 1 posterior median WD
+                                     cooling age
+444- 449 F6.3   Gyr       CoolAge2  [0.002/10.4]? Star 2 posterior median WD
+                                     cooling age
+451- 456 F6.3   [Sun]     [Fe/H]1   [-1.53/0.08]? Star 1 posterior median
+                                     metallicity
+458- 463 F6.3   [Sun]     [Fe/H]2   [-1.52/0.08]? Star 2 posterior median
+                                     metallicity
+465- 470 F6.3   mag       DM1       [-1.3/7.7]? Star 1 posterior median
+                                     distance modulus
+472- 477 F6.3   mag       DM2       [-0.2/9.3]? Star 2 posterior median
+                                     distance modulus
+479- 483 F5.3   mag       Av1       [0/1.9]? Star 1 posterior median V band
+                                     extinction
+485- 489 F5.3   mag       Av2       [0.001/1.5]? Star 2 posterior median V
+                                     band extinction
+491- 495 F5.3   Gyr     e_Age1      [0.019/3.5]? Posterior standard deviation
+                                     in Age1
+497- 501 F5.3   Gyr     e_Age2      [0.013/3.5]? Posterior standard deviation
+                                     in Age2
+503- 507 F5.3   Msun    e_ZMass1    [0.02/1.1]? Uncertainty in ZMass1
+509- 513 F5.3   Msun    e_ZMass2    [0.007/1.5]? Uncertainty in ZMass2
+515- 519 F5.3   Gyr     e_PreAge1   [0.003/3.4]? Uncertainty in PreAge1
+521- 525 F5.3   Gyr     e_PreAge2   [0.002/3.5]? Uncertainty in PreAge2
+527- 531 F5.3   Gyr     e_CoolAge1  [0/0.7]? Uncertainty in CoolAge1
+533- 537 F5.3   Gyr     e_CoolAge2  [0.002/1.2]? Uncertainty in CoolAge2
+539- 543 F5.3   [Sun]   e_[Fe/H]1   [0.04/0.7]? Uncertainty in [Fe/H]1
+545- 549 F5.3   [Sun]   e_[Fe/H]2   [0.04/0.7]? Uncertainty in [Fe/H]2
+551- 555 F5.3   mag     e_DM1       [0.001/0.2]? Uncertainty in DM1
+557- 561 F5.3   mag     e_DM2       [0.001/0.3]? Uncertainty in DM2
+563- 567 F5.3   mag     e_Av1       [0/0.4]? Uncertainty in AV1
+569- 573 F5.3   mag     e_Av2       [0/0.4]? Uncertainty in AV2
+     575 I1     ---       Nb1       [3/7]? Number of photometry bands used in
+                                     BASE-9 fitting for Star 1
+     577 I1     ---       Nb2       [3/7]? Number of photometry bands used in
+                                     BASE-9 fitting for Star 2
+579- 588 F10.4  AU        Sep       [56/32985] Projected physical separation
+590- 596 F7.5   deg       PDis      [0.00057/0.14] Pair distance
+     598 I1     ---       Type      [1/2] Binary type (1)
+600- 604 F5.3   ---       PCont     [0/0.2] Contamination probability by
+                                     random alignments
+--------------------------------------------------------------------------------
+Note (1): Binary type as follows:
+    1 = MS-WD (3551 occurrences);
+    2 = WD-WD (236 occurrences).
+--------------------------------------------------------------------------------
+
+History:
+    From electronic version of the journal
+
+================================================================================
+(End)                    Prepared by [AAS], Emmanuelle Perret [CDS]  01-Jul-2021
