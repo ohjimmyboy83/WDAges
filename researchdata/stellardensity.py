@@ -21,7 +21,11 @@ d = 1/plx;
 r = d * np.cos(np.radians(b));
 
 #define bins
+<<<<<<< Updated upstream
 lmax = np.radians(l.max());
+=======
+lmax = 2*np.pi;
+>>>>>>> Stashed changes
 rmax = r.max();
 rbins = np.linspace(0.0, rmax, 50);
 lbins = np.linspace(0.0, lmax, 60);
@@ -40,6 +44,7 @@ fig.colorbar(pc);
 
 plt.show()
 
+<<<<<<< Updated upstream
 
 #fig = plt.figure();
 #ax = fig.add_subplot(projection='polar');
@@ -49,3 +54,5 @@ plt.show()
 #fig.colorbar(p, label='PreAge (Gyr)');
 #ax.set_title("r * cos(b) vs l -- kpc vs degrees.");
 #plt.show();
+=======
+>>>>>>> Stashed changes
