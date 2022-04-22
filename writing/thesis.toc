@@ -1,0 +1,8 @@
+\babel@toc {english}{}
+\contentsline {section}{\numberline {1}Introduction}{1}%
+\contentsline {subsection}{\numberline {1.1}Dating Stars is important}{1}%
+\contentsline {subsection}{\numberline {1.2}Dating Stars is Hard}{1}%
+\contentsline {section}{\numberline {2}Methods}{1}%
+\contentsline {subsection}{\numberline {2.1}I basically plotted this crap}{1}%
+\contentsline {subsection}{\numberline {2.2}you should give me a master's degree}{1}%
+\contentsline {section}{\numberline {3}Conclusions}{1}%
