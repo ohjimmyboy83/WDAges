@@ -1,0 +1,21 @@
+Data selection notes
+
+qiutable2 - (qiutable2wrong.csv)
+    The data published from the qiu group. 
+    The csv available has the wrong source id's from gaia, so I had to use the dat file and convert to csv. 
+    This conversion had some difficulty with the radial velocity values, most of which had a zero placeholder. 
+    I ended up deleting the rows with nonzero values, although in retrospect I should have just deleted the column.
+    
+table2fixed - 
+    qiutable2wrong, but with the 783 entries with nonzero radial velocities removed. 
+
+qiutable2norv - 
+    qiutable2wrong, but I deleted the columns. I then uploaded them to the gaia portal to look up the associated l and b values.
+newtable2 -
+    http://tapvizier.cds.unistra.fr/adql/?J/ApJS/253/58
+    I found the data again in vizier, and it looks like it has the source id correct. 3557 rows, with the stars included that we cut earlier for no reason
+
+phillipstable1 - 
+    took newtable2 and found the l and b values for each source id in it from the gaia website
+
+phillipstable2 - merged phillipstable1 and newtable2 on the gaia2 source id. renamed a couple of vaiables for ease.
